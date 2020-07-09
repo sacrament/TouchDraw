@@ -38,7 +38,7 @@ open class TouchDrawView: UIView {
     }
 
     /// Used to register undo and redo actions
-    fileprivate var touchDrawUndoManager = UndoManager()
+    open var touchDrawUndoManager = UndoManager()
 
     /// Used to keep track of all the strokes
     internal var stack: [Stroke] = []
